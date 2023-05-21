@@ -12,7 +12,6 @@
           "type": "string",
           "not": {
             "enum": [
-              "deco-sites/time158katiau/functions/LoadGitHubRaw.ts",
               "deco-sites/std/functions/butterCMSAds.ts",
               "deco-sites/std/functions/butterCMSBrands.ts",
               "deco-sites/std/functions/butterCMSCategories.ts",
@@ -40,6 +39,7 @@
               "deco-sites/std/functions/vtexProductListingPage.ts",
               "deco-sites/std/functions/vtexSuggestions.ts",
               "deco-sites/std/functions/vtexWishlist.ts",
+              "deco-sites/time158katiau/functions/LoadGitHubRaw.ts",
               "deco-sites/std/accounts/occ.ts",
               "deco-sites/std/accounts/shopify.ts",
               "deco-sites/std/accounts/vnda.ts",
@@ -70,9 +70,6 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
-              "deco-sites/time158katiau/sections/DesignSystem.tsx",
-              "deco-sites/time158katiau/sections/GetStarted.tsx",
-              "deco-sites/time158katiau/sections/Head.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
@@ -83,6 +80,11 @@
               "deco-sites/std/sections/SEO.tsx",
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
+              "deco-sites/time158katiau/sections/DesignSystem.tsx",
+              "deco-sites/time158katiau/sections/Footer.jsx",
+              "deco-sites/time158katiau/sections/GetStarted.tsx",
+              "deco-sites/time158katiau/sections/Head.tsx",
+              "deco-sites/time158katiau/sections/Header.jsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -115,32 +117,6 @@
           }
         }
       }
-    },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props": {
-      "type": "object",
-      "properties": {
-        "repo": {
-          "type": "string",
-          "description": "Complete user/repo format",
-          "title": "Repo"
-        },
-        "branch": {
-          "type": "string",
-          "description": "Branch",
-          "title": "Branch"
-        },
-        "path": {
-          "type": "string",
-          "description": "Path to fetch, or leave blank and add :path route param.",
-          "title": "Path"
-        }
-      },
-      "required": [
-        "repo",
-        "branch",
-        "path"
-      ],
-      "title": "deco-sites/time158katiau/functions/LoadGitHubRaw.ts@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL3R5cGVzLnRz@Category": {
       "type": "object",
@@ -3187,6 +3163,32 @@
         "count"
       ],
       "title": "deco-sites/std/functions/vtexWishlist.ts@Props"
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "repo": {
+          "type": "string",
+          "description": "Complete user/repo format",
+          "title": "Repo"
+        },
+        "branch": {
+          "type": "string",
+          "description": "Branch",
+          "title": "Branch"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to fetch, or leave blank and add :path route param.",
+          "title": "Path"
+        }
+      },
+      "required": [
+        "repo",
+        "branch",
+        "path"
+      ],
+      "title": "deco-sites/time158katiau/functions/LoadGitHubRaw.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9hY2NvdW50LnRz@Account": {
       "type": "object",
@@ -6893,6 +6895,206 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "trackingIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation .",
+          "title": "Tracking Ids"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/std/components/Analytics.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "authToken": {
+          "type": "string",
+          "title": "Auth Token"
+        }
+      },
+      "required": [
+        "label",
+        "authToken"
+      ],
+      "title": "Locale"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale"
+      },
+      "title": "Locale[]"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@ConfigButterCMS": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9hY2NvdW50LnRz@Account"
+        }
+      ],
+      "properties": {
+        "locales": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale[]",
+          "title": "Locales"
+        },
+        "defaultLocale": {
+          "type": "string",
+          "description": "Default value: en-us",
+          "default": "en-us",
+          "title": "Default Locale"
+        },
+        "apiVersion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Default value: v2",
+          "default": "v2",
+          "title": "Api Version"
+        }
+      },
+      "required": [
+        "locales",
+        "defaultLocale"
+      ],
+      "title": "deco-sites/std/commerce/butterCMS/client.ts@ConfigButterCMS"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPQmFzZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "canonical": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Canonical",
+          "default": "https://example.com"
+        },
+        "imageUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image Url"
+        },
+        "themeColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Theme Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/std/components/seo/SEOBase.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPUERQLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductDetailsPage|null",
+          "title": "Page"
+        },
+        "titleTemplate": {
+          "type": "string",
+          "title": "Title Template",
+          "description": "add a %s whenever you want it to be replaced with the product name",
+          "default": "%s | Fashion Store"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description",
+          "description": "If not set, the product description will be used instead"
+        },
+        "themeColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Theme Color"
+        }
+      },
+      "required": [
+        "page",
+        "titleTemplate"
+      ],
+      "title": "deco-sites/std/components/seo/SEOPDP.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPUExQLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductListingPage|null",
+          "title": "Page"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Url"
+        },
+        "imageUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image Url"
+        },
+        "themeColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Theme Color"
+        }
+      },
+      "required": [
+        "page"
+      ],
+      "title": "deco-sites/std/components/seo/SEOPLP.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g=@Colors": {
       "type": "object",
       "properties": {
@@ -7215,20 +7417,6 @@
       "required": [],
       "title": "deco-sites/time158katiau/sections/DesignSystem.tsx@Props"
     },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "enableInspectVSCode": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Enable Inspect V S Code"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/time158katiau/sections/GetStarted.tsx@Props"
-    },
     "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -7266,206 +7454,6 @@
         "themeColor"
       ],
       "title": "deco-sites/time158katiau/sections/Head.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "trackingIds": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation .",
-          "title": "Tracking Ids"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/std/components/Analytics.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "authToken": {
-          "type": "string",
-          "title": "Auth Token"
-        }
-      },
-      "required": [
-        "label",
-        "authToken"
-      ],
-      "title": "Locale"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale"
-      },
-      "title": "Locale[]"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@ConfigButterCMS": {
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9hY2NvdW50LnRz@Account"
-        }
-      ],
-      "properties": {
-        "locales": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL2NsaWVudC50cw==@Locale[]",
-          "title": "Locales"
-        },
-        "defaultLocale": {
-          "type": "string",
-          "description": "Default value: en-us",
-          "default": "en-us",
-          "title": "Default Locale"
-        },
-        "apiVersion": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Default value: v2",
-          "default": "v2",
-          "title": "Api Version"
-        }
-      },
-      "required": [
-        "locales",
-        "defaultLocale"
-      ],
-      "title": "deco-sites/std/commerce/butterCMS/client.ts@ConfigButterCMS"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPQmFzZS50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
-        },
-        "canonical": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Canonical",
-          "default": "https://example.com"
-        },
-        "imageUrl": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image Url"
-        },
-        "themeColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Theme Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/std/components/seo/SEOBase.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPUERQLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductDetailsPage|null",
-          "title": "Page"
-        },
-        "titleTemplate": {
-          "type": "string",
-          "title": "Title Template",
-          "description": "add a %s whenever you want it to be replaced with the product name",
-          "default": "%s | Fashion Store"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description",
-          "description": "If not set, the product description will be used instead"
-        },
-        "themeColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Theme Color"
-        }
-      },
-      "required": [
-        "page",
-        "titleTemplate"
-      ],
-      "title": "deco-sites/std/components/seo/SEOPDP.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9zZW8vU0VPUExQLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductListingPage|null",
-          "title": "Page"
-        },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
-        },
-        "url": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Url"
-        },
-        "imageUrl": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image Url"
-        },
-        "themeColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Theme Color"
-        }
-      },
-      "required": [
-        "page"
-      ],
-      "title": "deco-sites/std/components/seo/SEOPLP.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -8178,28 +8166,6 @@
       ],
       "title": "deco-sites/std/packs/vtex/actions/wishlist/removeItem.ts@Props"
     },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz": {
-      "title": "GitHub Raw Loader",
-      "description": "Grabs data from a GitHub repo",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/time158katiau/functions/LoadGitHubRaw.ts"
-          ],
-          "default": "deco-sites/time158katiau/functions/LoadGitHubRaw.ts"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL2J1dHRlckNNU0Fkcy50cw==": {
       "title": "Butter CMS Featured Ads Loader",
       "description": "Usefull for shelves and static galleries.",
@@ -8739,6 +8705,28 @@
             "deco-sites/std/functions/vtexWishlist.ts"
           ],
           "default": "deco-sites/std/functions/vtexWishlist.ts"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz": {
+      "title": "GitHub Raw Loader",
+      "description": "Grabs data from a GitHub repo",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/functions/LoadGitHubRaw.ts"
+          ],
+          "default": "deco-sites/time158katiau/functions/LoadGitHubRaw.ts"
         }
       }
     },
@@ -9376,69 +9364,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g=": {
-      "title": "deco-sites/time158katiau/sections/DesignSystem.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/time158katiau/sections/DesignSystem.tsx"
-          ],
-          "default": "deco-sites/time158katiau/sections/DesignSystem.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
-      "title": "deco-sites/time158katiau/sections/GetStarted.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/time158katiau/sections/GetStarted.tsx"
-          ],
-          "default": "deco-sites/time158katiau/sections/GetStarted.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4": {
-      "title": "deco-sites/time158katiau/sections/Head.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/time158katiau/sections/Head.tsx"
-          ],
-          "default": "deco-sites/time158katiau/sections/Head.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA==": {
       "title": "deco-sites/std/sections/Analytics.tsx",
       "type": "object",
@@ -9646,6 +9571,96 @@
             "deco-sites/std/sections/SEOPLP.tsx"
           ],
           "default": "deco-sites/std/sections/SEOPLP.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g=": {
+      "title": "deco-sites/time158katiau/sections/DesignSystem.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/sections/DesignSystem.tsx"
+          ],
+          "default": "deco-sites/time158katiau/sections/DesignSystem.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Zvb3Rlci5qc3g=": {
+      "title": "deco-sites/time158katiau/sections/Footer.jsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/sections/Footer.jsx"
+          ],
+          "default": "deco-sites/time158katiau/sections/Footer.jsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
+      "title": "deco-sites/time158katiau/sections/GetStarted.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/sections/GetStarted.tsx"
+          ],
+          "default": "deco-sites/time158katiau/sections/GetStarted.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4": {
+      "title": "deco-sites/time158katiau/sections/Head.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/sections/Head.tsx"
+          ],
+          "default": "deco-sites/time158katiau/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWRlci5qc3g=": {
+      "title": "deco-sites/time158katiau/sections/Header.jsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time158katiau/sections/Header.jsx"
+          ],
+          "default": "deco-sites/time158katiau/sections/Header.jsx"
         }
       }
     },
@@ -10279,9 +10294,6 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz"
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL2J1dHRlckNNU0Fkcy50cw=="
         },
         {
@@ -10361,6 +10373,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhXaXNobGlzdC50cw=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz"
         }
       ]
     },
@@ -10493,15 +10508,6 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4"
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
         },
         {
@@ -10530,6 +10536,21 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvU0VPUExQLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0Zvb3Rlci5qc3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lMTU4a2F0aWF1L3NlY3Rpb25zL0hlYWRlci5qc3g="
         }
       ]
     },

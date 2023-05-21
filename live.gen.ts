@@ -6,9 +6,11 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Head.tsx";
-import * as $$$$$$$$1 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$0 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$1 from "./sections/Footer.jsx";
 import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$3 from "./sections/Head.tsx";
+import * as $$$$$$$$4 from "./sections/Header.jsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -116,7 +118,6 @@ import * as i2$$$$$17 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
 
 const manifest = {
   "functions": {
-    "deco-sites/time158katiau/functions/LoadGitHubRaw.ts": $0,
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
     "deco-sites/std/functions/butterCMSBrands.ts": i2$1,
     "deco-sites/std/functions/butterCMSCategories.ts": i2$2,
@@ -144,6 +145,7 @@ const manifest = {
     "deco-sites/std/functions/vtexProductListingPage.ts": i2$24,
     "deco-sites/std/functions/vtexSuggestions.ts": i2$25,
     "deco-sites/std/functions/vtexWishlist.ts": i2$26,
+    "deco-sites/time158katiau/functions/LoadGitHubRaw.ts": $0,
   },
   "routes": {
     "./routes/_app.tsx": $$$$0,
@@ -162,9 +164,6 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/time158katiau/sections/DesignSystem.tsx": $$$$$$$$1,
-    "deco-sites/time158katiau/sections/GetStarted.tsx": $$$$$$$$2,
-    "deco-sites/time158katiau/sections/Head.tsx": $$$$$$$$0,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -175,6 +174,11 @@ const manifest = {
     "deco-sites/std/sections/SEO.tsx": i2$$$$10,
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$11,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$12,
+    "deco-sites/time158katiau/sections/DesignSystem.tsx": $$$$$$$$0,
+    "deco-sites/time158katiau/sections/Footer.jsx": $$$$$$$$1,
+    "deco-sites/time158katiau/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/time158katiau/sections/Head.tsx": $$$$$$$$3,
+    "deco-sites/time158katiau/sections/Header.jsx": $$$$$$$$4,
   },
   "loaders": {
     "$live/loaders/workflows/events.ts": i2$$$0,
