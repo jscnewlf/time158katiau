@@ -1,14 +1,11 @@
-
-
 function Footer() {
- 
-    return (
-      <>
-        <footer>
+  return (
+    <>
+      <footer>
         FOOTER
-        </footer>
-      </>
-    );
-  }
-  
-  export default Footer;
+      </footer>
+    </>
+  );
+}
+
+export default Footer;

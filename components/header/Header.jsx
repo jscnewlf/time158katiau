@@ -1,12 +1,11 @@
 function Header() {
- 
-    return (
-      <>
-        <header>
+  return (
+    <>
+      <header>
         HEADER
-        </header>
-      </>
-    );
-  }
-  
-  export default Header;
+      </header>
+    </>
+  );
+}
+
+export default Header;
